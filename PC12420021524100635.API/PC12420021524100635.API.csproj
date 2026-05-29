@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pregunta6\" />
     <Folder Include="Pregunta7\" />
   </ItemGroup>
 

@@ -1,0 +1,264 @@
+{
+  "info": {
+    "_postman_id": "f042a743-2810-45ec-895f-398c6cea142f",
+    "name": "Pruebas Taller Mecanico",
+    "description": "Coleccion de pruebas para el Taller Mecanico API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54272582",
+    "_collection_link": "https://go.postman.co/collection/54272582-f042a743-2810-45ec-895f-398c6cea142f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "TipoServicio",
+      "item": [
+        {
+          "name": "GET - Listar todos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/TipoServicio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "TipoServicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET - Obtener por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/TipoServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "TipoServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Cambio de Aceite\",\n  \"precioBase\": 150.00\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7087/api/TipoServicio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "TipoServicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 1,\n  \"nombre\": \"Cambio de Aceite Premium\",\n  \"precioBase\": 200.00\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7087/api/TipoServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "TipoServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE - Eliminar",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/TipoServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "TipoServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "OrdenServicio",
+      "item": [
+        {
+          "name": "GET - Listar todas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/OrdenServicio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "OrdenServicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET - Obtener por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/OrdenServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "OrdenServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Crear",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"descripcionProblema\": \"Fallo en el motor\",\n  \"costoEstimado\": 500.00,\n  \"estado\": \"Pendiente\",\n  \"vehiculoId\": 1,\n  \"tipoServicioId\": 1\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7087/api/OrdenServicio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "OrdenServicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PUT - Actualizar",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 1,\n  \"descripcionProblema\": \"Fallo en el motor - revisado\",\n  \"costoEstimado\": 600.00,\n  \"estado\": \"En reparacion\",\n  \"vehiculoId\": 1,\n  \"tipoServicioId\": 1\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7087/api/OrdenServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "OrdenServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DELETE - Eliminar",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7087/api/OrdenServicio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7087",
+              "path": [
+                "api",
+                "OrdenServicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
